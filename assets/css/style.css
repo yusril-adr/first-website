@@ -1,0 +1,173 @@
+@keyframes intro {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+header {
+    display: inline;
+    margin: 0;
+}
+
+.jumbotron {
+    font-family: 'Nunito', cursive;
+    padding: 10px;
+    padding-left: 40px;
+    background-image: -webkit-linear-gradient(90deg, rgb(151, 180, 235), rgb(116, 137, 175));
+    color: white;
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, .7);*/
+    font-size: 22px;
+}
+
+.jumbotron h1 {
+    margin-bottom: 0;
+    opacity: 0;
+    animation: intro 1s forwards;
+}
+
+.jumbotron p {
+    margin-top: 0;
+    opacity: 0;
+    animation: intro 1s .4s forwards;
+}
+
+nav {
+    background-color: cornflowerblue;
+    padding: 3px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    width: 100px;
+    list-style: none;
+    text-align: center;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    font-weight: bold;
+}
+
+.card {
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main p {
+    text-align: justify;
+}
+
+.title {
+    text-align: center;
+}
+
+#content {
+    width: 70%;
+    float: left;
+    padding: 0 20px;
+}
+
+.featured-image {
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 24px;
+    border: 7px solid white;
+    box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.2);
+}
+
+aside {
+    width: 30%;
+    padding: 0 20px;
+    float: left;
+}
+
+.profil img {
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.profil p {
+    font-size: 14px;
+}
+
+footer {
+    clear: both;
+    border-top: 20px solid white;
+    text-align: center;
+    background-color: cadetblue;
+    color: white;
+    padding: 10px;
+    padding-top: 0;
+}
+
+footer figure img {
+    border-radius: 50%;
+    width: 78px;
+    padding: 5px;
+    transition: .3s;
+}
+
+footer figure img:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1000px) {
+    .jumbotron {
+        text-align: center;
+    }
+
+    .jumbotron h1 {
+        font-size: 26px;
+    }
+
+    .jumbotron p {
+        font-size: 20px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px auto;
+        font-size: 18px;
+        text-indent: -20%;
+    }
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .profil figure img {
+        width: 200px;
+    }
+}

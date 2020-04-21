@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End & Back-End</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Inria+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <script>
+            const username = prompt("Siapa nama anda ?");
+        </script>
+
+        <div class="jumbotron">
+            <h1>Hello, <span id="user">User</span> !</h1>
+
+            <script>
+                if (username != "" && username != null){
+                user.innerText = username;
+                } else {
+                    user.innerText = "User";
+                }
+            </script>
+
+            <p>Welcome to my website.</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="content">
+            <article class="card">
+
+                <h2 class="title">Apa Itu Front-End dan Back-End ?</h2>
+
+                <img src="assets/img/cover_article.jpg" alt="Cover" class="featured-image">
+
+                <p>Perkembangan teknologi membuat website kini semakin kompleks dan perlu beberapa developer 
+                    untuk menciptakannya. Mereka, para developer web, terbagi menjadi dua kubu: 
+                    Front-End dan Back-End.</p>
+
+                <p>Keduanya saling bahu-membahu agar bisa menghasilkan produk web yang memukau. 
+                    Bagi kalian yang mungkin masih kesulitan memahami perbedaan antara wujud 
+                    dan peran dari Front-End dan Back-End, berikut penjelasannya:</p>
+
+                <section>
+                    <h3>Front-End</h3>
+
+                    <p>Front-End adalah sebuah bagian dari website yang menyuguhkan tampilan kepada user. 
+                        Bagian ini dibangun menggunakan HTTP (HyperText Markup Language), 
+                        CSS (Cascading Style Sheets), dan JavaScript sehingga sebuah URL bisa berfungsi 
+                        dan menampilkan website yang baik.</p>
+
+                    <p>Orang yang bekerja di baliknya alias Front-End developer bertugas mengembangkan 
+                        semua komponen visual pada situs web dan menjaga tampilan antarmuka. 
+                        Front-End developer juga bertugas mengerjakan layout tampilan muka 
+                        alias User Interface (UI) suatu website atau aplikasi untuk tampilan yang lebih menarik.</p>
+                </section>
+
+                <section>
+                    <h3>Back-End</h3>
+
+                    <p>Di balik sebuah website yang bagus, ada program Back-End yang menopang 
+                        semua fitur agar berjalan dengan semestinya. Jika Front-End fokus pada tampilan website, 
+                        maka Back-End fokus pada fungsionalitas.</p>
+
+                    <p>Unsur-unsur yang ada dalam program Back-End biasanya berupa database, bahasa pemrograman, 
+                        server website, dan service web. Sederhananya, pengembang Back-End bertugas 
+                        di belakang layar memastikan fungsi fitur berjalan lancar menuju sistem atau database 
+                        yang digunakan oleh situs tersebut.</p>
+
+                    <p>Namun, bukan berarti tugas seorang Back-End developer tidak bisa dilakukan oleh Front-End 
+                        developer. Mereka bisa jadi ahli di kedua bidang. Pengembang Front-End dan Back-End bekerja 
+                        sama mengembangkan sebuah situs web untuk menghadirkan teknologi bisa dinikmati user-nya.</p>
+                </section>
+            </article>
+        </div>
+
+        <aside>
+            <article class="profil card">
+                <h2 class="title">Yusril Adriansyah Putra</h2>
+
+                <figure>
+                    <img src="assets/img/myProfile.jpg" alt="My profile">
+                </figure>
+
+                <p>Saya adalah mahasiswa Universitas Negeri Surabaya Jurusan Teknik Informatika.
+                    Umur saya 20 tahun dan sedang menempuh semester 2.
+                    Saya bercita-cita menjadi Full-Stack Web Developer 
+                    dan ingin membuat start-up unicorn saya sendiri.</p>
+            </article>
+        </aside>
+    </main>
+
+    <footer id="contact">
+        <p>2020 &copy; Yusril Adriansyah Putra</p>
+
+        <figure>
+            <a href="https://www.facebook.com/yusril.adr" target="_blank" class="facebook">
+                <img src="assets/img/facebook.png" alt="Facebook">
+            </a>
+    
+            <a href="https://www.instagram.com/yusril_adr" target="_blank" class="instagram">
+                <img src="assets/img/instagram.png" alt="Instagram">
+            </a>
+    
+            <a href="https://www.dicoding.com/users/648933" target="_blank" class="dicoding">
+                <img src="assets/img/dicoding.png" alt="Dicoding">
+            </a>
+        </figure>
+    </footer>
+</body>
+</html>

@@ -1,22 +1,25 @@
+import "./greeting-message.js";
 
 const main = () => {
+    const bodyElement = document.querySelector("body");
     const headerElement = document.querySelector("header");
     const jumbotronElement = document.querySelector(".jumbotron");
     const userElement = document.querySelector("#user");
     const navElement = document.querySelector("nav");
-    const username = prompt("Siapa nama anda ?");
+    const greetingElement = document.createElement("greeting-message");
+    bodyElement.appendChild(greetingElement);
 
-    const greeting = name => {
+    const insertName = () => {
         headerElement.removeChild(jumbotronElement);
-
-        if(name !== "" && name !== null){
-            userElement.innerHTML = name;
+        const username = greetingElement.value;
+        if(username !== "" || username !== " ") {
+            userElement.innerHTML = username;
         }
-
+        bodyElement.removeChild(greetingElement);
         headerElement.insertBefore(jumbotronElement, navElement);
-    };
-    
-    greeting(username);
+    }
+
+    greetingElement.clickEvent = insertName;
 };
 
 

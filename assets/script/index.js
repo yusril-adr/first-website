@@ -7,18 +7,20 @@ const main = () => {
     const userElement = document.querySelector("#user");
     const navElement = document.querySelector("nav");
     const greetingElement = document.createElement("greeting-message");
-    bodyElement.appendChild(greetingElement);
 
     const insertName = () => {
         headerElement.removeChild(jumbotronElement);
         const username = greetingElement.value;
-        if(username !== "" || username !== " ") {
+
+        if(username) {
             userElement.innerHTML = username;
         }
+
         bodyElement.removeChild(greetingElement);
         headerElement.insertBefore(jumbotronElement, navElement);
     }
 
+    bodyElement.appendChild(greetingElement);
     greetingElement.clickEvent = insertName;
 };
 

@@ -79,7 +79,7 @@ class GreetingMessage extends HTMLElement {
         <div class="greeting-message">
             <div class="card">
                 <p>Siapa nama anda ?</p>
-                <input type="text" id="nameBox">
+                <input type="text" id="nameBox" placeholder="Nama anda">
                 <button id="nameButton">Oke</button>
             </div>
         </div>
